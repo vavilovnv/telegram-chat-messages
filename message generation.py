@@ -110,14 +110,7 @@ def generate(source, start='', words_count=100, sample_size=2):
     return tokens_to_text(generated_tokens)
 
 
-if __name__ == '__main__':
-
-    # константы
-    NEWLINE_SYMBOL = "§"  # знак параграфа в тексте
-    FILENAME = 'input.json'  # имя файла с данными
-    FROM = 'lvnvl 😐'  # имя пользователя, по сообщениям которого формируется ответ
-    WORDS_COUNT = 150
-
+def main():
     messages = get_data_from_json_file()
     for key, text_message in messages.items():
         len_text_message = len(text_message)
@@ -125,3 +118,13 @@ if __name__ == '__main__':
         sample_size = get_sample_size(len_text_message)
         print(generate(source=text_message, words_count=WORDS_COUNT, sample_size=sample_size))
         print()
+        
+        
+if __name__ == '__main__':
+    # константы
+    NEWLINE_SYMBOL = "§"  # знак параграфа в тексте
+    FILENAME = 'input.json'  # имя файла с данными
+    FROM = 'lvnvl 😐'  # имя пользователя, по сообщениям которого формируется ответ
+    WORDS_COUNT = 150  # количество слов в формируемом сообщении
+
+    main()
