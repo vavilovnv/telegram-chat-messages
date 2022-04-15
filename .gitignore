@@ -134,3 +134,6 @@ dmypy.json
 
 # misc
 input.json
+setup.py
+README.txt
+generate_message.egg-info
