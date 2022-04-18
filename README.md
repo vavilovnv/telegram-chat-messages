@@ -17,4 +17,4 @@
 
 Установить message_generation как модуль для импорта: `pip install .\dist\generate_message-1.0.tar.gz`
 
-![Python](https://img.shields.io/badge/-Python-blue) ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=vavilovnv.python_ex)
+![Python](https://img.shields.io/badge/-Python-blue) ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=vavilovnv.telegram-chat-messages)
